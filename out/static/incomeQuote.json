@@ -1,0 +1,378 @@
+[
+ {
+   "income": 21,
+   "quote": 0.13
+ },
+ {
+   "income": 21.5,
+   "quote": 0.135
+ },
+ {
+   "income": 22,
+   "quote": 0.14
+ },
+ {
+   "income": 22.5,
+   "quote": 0.145
+ },
+ {
+   "income": 23,
+   "quote": 0.145
+ },
+ {
+   "income": 23.5,
+   "quote": 0.15
+ },
+ {
+   "income": 24,
+   "quote": 0.155
+ },
+ {
+   "income": 24.5,
+   "quote": 0.155
+ },
+ {
+   "income": 25,
+   "quote": 0.16
+ },
+ {
+   "income": 26,
+   "quote": 0.165
+ },
+ {
+   "income": 27,
+   "quote": 0.17
+ },
+ {
+   "income": 28,
+   "quote": 0.175
+ },
+ {
+   "income": 29,
+   "quote": 0.18
+ },
+ {
+   "income": 30,
+   "quote": 0.18
+ },
+ {
+   "income": 31,
+   "quote": 0.185
+ },
+ {
+   "income": 32,
+   "quote": 0.19
+ },
+ {
+   "income": 33,
+   "quote": 0.19
+ },
+ {
+   "income": 34,
+   "quote": 0.19
+ },
+ {
+   "income": 35,
+   "quote": 0.19
+ },
+ {
+   "income": 36,
+   "quote": 0.19
+ },
+ {
+   "income": 37,
+   "quote": 0.19
+ },
+ {
+   "income": 38,
+   "quote": 0.19
+ },
+ {
+   "income": 39,
+   "quote": 0.19
+ },
+ {
+   "income": 40,
+   "quote": 0.19
+ },
+ {
+   "income": 41,
+   "quote": 0.19
+ },
+ {
+   "income": 42,
+   "quote": 0.195
+ },
+ {
+   "income": 43,
+   "quote": 0.195
+ },
+ {
+   "income": 44,
+   "quote": 0.195
+ },
+ {
+   "income": 45,
+   "quote": 0.195
+ },
+ {
+   "income": 46,
+   "quote": 0.20
+ },
+ {
+   "income": 47,
+   "quote": 0.20
+ },
+ {
+   "income": 48,
+   "quote": 0.20
+ },
+ {
+   "income": 49,
+   "quote": 0.20
+ },
+ {
+   "income": 50,
+   "quote": 0.20
+ },
+ {
+   "income": 51,
+   "quote": 0.205
+ },
+ {
+   "income": 52,
+   "quote": 0.205
+ },
+ {
+   "income": 53,
+   "quote": 0.205
+ },
+ {
+   "income": 54,
+   "quote": 0.205
+ },
+ {
+   "income": 55,
+   "quote": 0.205
+ },
+ {
+   "income": 56,
+   "quote": 0.21
+ },
+ {
+   "income": 57,
+   "quote": 0.21
+ },
+ {
+   "income": 58,
+   "quote": 0.215
+ },
+ {
+   "income": 59,
+   "quote": 0.215
+ },
+ {
+   "income": 60,
+   "quote": 0.215
+ },
+ {
+   "income": 61,
+   "quote": 0.22
+ },
+ {
+   "income": 62,
+   "quote": 0.22
+ },
+ {
+   "income": 63,
+   "quote": 0.22
+ },
+ {
+   "income": 64,
+   "quote": 0.225
+ },
+ {
+   "income": 65,
+   "quote": 0.225
+ },
+ {
+   "income": 66,
+   "quote": 0.225
+ },
+ {
+   "income": 67,
+   "quote": 0.23
+ },
+ {
+   "income": 68,
+   "quote": 0.23
+ },
+ {
+   "income": 69,
+   "quote": 0.23
+ },
+ {
+   "income": 70,
+   "quote": 0.23
+ },
+ {
+   "income": 71,
+   "quote": 0.235
+ },
+ {
+   "income": 72,
+   "quote": 0.235
+ },
+ {
+   "income": 73,
+   "quote": 0.235
+ },
+ {
+   "income": 74,
+   "quote": 0.235
+ },
+ {
+   "income": 75,
+   "quote": 0.235
+ },
+ {
+   "income": 76,
+   "quote": 0.235
+ },
+ {
+   "income": 77,
+   "quote": 0.235
+ },
+ {
+   "income": 78,
+   "quote": 0.24
+ },
+ {
+   "income": 79,
+   "quote": 0.24
+ },
+ {
+   "income": 80,
+   "quote": 0.24
+ },
+ {
+   "income": 81,
+   "quote": 0.24
+ },
+ {
+   "income": 82,
+   "quote": 0.24
+ },
+ {
+   "income": 83,
+   "quote": 0.24
+ },
+ {
+   "income": 84,
+   "quote": 0.24
+ },
+ {
+   "income": 85,
+   "quote": 0.24
+ },
+ {
+   "income": 86,
+   "quote": 0.24
+ },
+ {
+   "income": 87,
+   "quote": 0.245
+ },
+ {
+   "income": 88,
+   "quote": 0.245
+ },
+ {
+   "income": 89,
+   "quote": 0.245
+ },
+ {
+   "income": 90,
+   "quote": 0.245
+ },
+ {
+   "income": 91,
+   "quote": 0.245
+ },
+ {
+   "income": 92,
+   "quote": 0.245
+ },
+ {
+   "income": 93,
+   "quote": 0.245
+ },
+ {
+   "income": 94,
+   "quote": 0.245
+ },
+ {
+   "income": 95,
+   "quote": 0.245
+ },
+ {
+   "income": 96,
+   "quote": 0.245
+ },
+ {
+   "income": 97,
+   "quote": 0.245
+ },
+ {
+   "income": 98,
+   "quote": 0.245
+ },
+ {
+   "income": 99,
+   "quote": 0.25
+ },
+ {
+   "income": 100,
+   "quote": 0.25
+ },
+ {
+   "income": 101,
+   "quote": 0.25
+ },
+ {
+   "income": 102,
+   "quote": 0.25
+ },
+ {
+   "income": 103,
+   "quote": 0.25
+ },
+ {
+   "income": 104,
+   "quote": 0.25
+ },
+ {
+   "income": 105,
+   "quote": 0.25
+ },
+ {
+   "income": 106,
+   "quote": 0.25
+ },
+ {
+   "income": 107,
+   "quote": 0.25
+ },
+ {
+   "income": 108,
+   "quote": 0.25
+ },
+ {
+   "income": 109,
+   "quote": 0.25
+ },
+ {
+   "income": 110,
+   "quote": 0.25
+ }
+]

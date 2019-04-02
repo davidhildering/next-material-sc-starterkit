@@ -1,0 +1,94 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Benefits should render correctly with no props 1`] = `
+<Wrapper
+  color="#ecf5f5"
+  id="benefits"
+>
+  <Container
+    component="div"
+    fluid={false}
+    lg={false}
+    md={false}
+    sm={false}
+    style={Object {}}
+    xl={false}
+    xs={false}
+  >
+    <Typography__Header3>
+      De Voordelen
+    </Typography__Header3>
+    <Row
+      align="normal"
+      component="div"
+      debug={false}
+      justify="start"
+      nogutter={false}
+      style={Object {}}
+    >
+      <Col
+        component="div"
+        debug={false}
+        lg={null}
+        md={4}
+        offset={Object {}}
+        pull={Object {}}
+        push={Object {}}
+        sm={null}
+        style={Object {}}
+        xl={null}
+        xs={null}
+      >
+        <Benefits__Benefit>
+          <Typography__Paragraph>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+          </Typography__Paragraph>
+        </Benefits__Benefit>
+      </Col>
+      <Col
+        component="div"
+        debug={false}
+        lg={null}
+        md={4}
+        offset={Object {}}
+        pull={Object {}}
+        push={Object {}}
+        sm={null}
+        style={Object {}}
+        xl={null}
+        xs={null}
+      >
+        <Benefits__Benefit>
+          <Typography__Paragraph>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+          </Typography__Paragraph>
+        </Benefits__Benefit>
+      </Col>
+      <Col
+        component="div"
+        debug={false}
+        lg={null}
+        md={4}
+        offset={Object {}}
+        pull={Object {}}
+        push={Object {}}
+        sm={null}
+        style={Object {}}
+        xl={null}
+        xs={null}
+      >
+        <Benefits__Benefit>
+          <Typography__Paragraph>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+          </Typography__Paragraph>
+        </Benefits__Benefit>
+      </Col>
+    </Row>
+  </Container>
+  <Benefits__ButtonContainer>
+    <Button
+      title="Afspraak maken adviseur"
+    />
+  </Benefits__ButtonContainer>
+</Wrapper>
+`;

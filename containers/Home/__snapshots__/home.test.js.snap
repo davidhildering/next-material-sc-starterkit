@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Homepage should render correctly with no props 1`] = `
+<Fragment>
+  <NavBar />
+  <WithStyles(TopBanner) />
+  <Benefits />
+  <ProductExplanation />
+  <MortgageCalculator />
+  <Contact />
+  <FAQ />
+  <AboutUs />
+  <Footer />
+</Fragment>
+`;

@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button should render button text correctly with given string 1`] = `
+<div>
+  <Button__ButtonLayout>
+    kies pakket
+  </Button__ButtonLayout>
+</div>
+`;
+
+exports[`Button should render correctly with no props 1`] = `
+<div>
+  <Button__ButtonLayout />
+</div>
+`;
