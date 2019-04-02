@@ -2171,11 +2171,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var styled_jsx_server__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-jsx/server */ "./node_modules/styled-jsx/server.js");
-/* harmony import */ var styled_jsx_server__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_server__WEBPACK_IMPORTED_MODULE_10__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_11__);
-
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_10__);
 
 
 
@@ -2236,7 +2233,7 @@ function (_Document) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                sheet = new styled_components__WEBPACK_IMPORTED_MODULE_11__["ServerStyleSheet"]();
+                sheet = new styled_components__WEBPACK_IMPORTED_MODULE_10__["ServerStyleSheet"]();
                 page = ctx.renderPage(function (App) {
                   return function (props) {
                     return sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(App, props));
@@ -2272,51 +2269,6 @@ function (_Document) {
 
   return MyDocument;
 }(next_document__WEBPACK_IMPORTED_MODULE_9___default.a);
-
-MyDocument.getInitialProps = function (ctx) {
-  // Resolution order
-  //
-  // On the server:
-  // 1. app.getInitialProps
-  // 2. page.getInitialProps
-  // 3. document.getInitialProps
-  // 4. app.render
-  // 5. page.render
-  // 6. document.render
-  //
-  // On the server with error:
-  // 1. document.getInitialProps
-  // 2. app.render
-  // 3. page.render
-  // 4. document.render
-  //
-  // On the client
-  // 1. app.getInitialProps
-  // 2. page.getInitialProps
-  // 3. app.render
-  // 4. page.render
-  // Render app and page and get the context of the page with collected side effects.
-  var page = ctx.renderPage(function (Component) {
-    return function (props) {
-      var WrappedComponent = function WrappedComponent(props) {
-        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, props);
-      };
-
-      return WrappedComponent;
-    };
-  });
-  var css;
-  return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, page, {
-    // Styles fragment is rendered after the app and page rendering finish.
-    styles: react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("style", {
-      id: "jss-server-side" // eslint-disable-next-line react/no-danger
-      ,
-      dangerouslySetInnerHTML: {
-        __html: css
-      }
-    }), styled_jsx_server__WEBPACK_IMPORTED_MODULE_10___default()() || null)
-  });
-};
 
 /* harmony default export */ __webpack_exports__["default"] = (MyDocument);
 
