@@ -33,7 +33,7 @@ class App extends Component {
         </div>
       </Layout>
         <CookieConsent
-          debug
+          debug //remove for production, set/leave for testing
           disableStyles={true}
           location="bottom"
           buttonText="Continue"

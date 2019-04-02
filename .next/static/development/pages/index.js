@@ -47177,7 +47177,8 @@ function (_Component) {
     key: "render",
     value: function render() {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_7___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_components_meta__WEBPACK_IMPORTED_MODULE_10__["default"], null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Layout, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_containers_Home__WEBPACK_IMPORTED_MODULE_9__["default"], null))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_cookie_consent__WEBPACK_IMPORTED_MODULE_13___default.a, {
-        debug: true,
+        debug: true //remove for production, set/leave for testing
+        ,
         disableStyles: true,
         location: "bottom",
         buttonText: "Continue",
