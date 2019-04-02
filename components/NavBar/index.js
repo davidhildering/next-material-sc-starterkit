@@ -118,7 +118,7 @@ class NavBar extends React.PureComponent {
                 to="#mortgage"
                 afterAnimate={() => this.toggleButton()}
               >
-                Maximale hypotheek
+                calculator
               </Scrollchor>
             </LinkTitle>
             <LinkTitle>

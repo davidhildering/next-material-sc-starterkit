@@ -71,8 +71,8 @@ class MortgageCalculator extends React.PureComponent {
     return (
       <Wrapper id="mortgage" color="#ecf5f5">
         <Container>
-          <Header4>Maximale hypotheek</Header4>
-          <Header5>Bereken wat jij maximaal als hypotheek kan krijgen</Header5>
+          <Header4>Lorum Calculator</Header4>
+          <Header5>Calculate max mortgage</Header5>
           <Row>
             <Col md={6}>
               <Benefit>
@@ -94,7 +94,7 @@ class MortgageCalculator extends React.PureComponent {
             <Col md={4}>
               <Benefit>
                 <Paragraph>
-                  maximale hypotheek
+                  outcome
                 </Paragraph>
                 <Paragraph>
                   <strong>{this.state.maxMortgage}</strong>

@@ -58,7 +58,7 @@ const Benefits = () => (
       </Row>
     </Container>
     <ButtonContainer>
-      <Button title="Afspraak maken adviseur" />
+      <Button title="CTA make appointment" />
     </ButtonContainer>
   </Wrapper>
 );

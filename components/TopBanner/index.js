@@ -5,7 +5,6 @@ import Slider from "@material-ui/lab/Slider";
 import { withStyles } from "@material-ui/core/styles";
 import { Header1, Header2 } from "../Typography";
 import { Container, Row } from "react-grid-system";
-import RadioGroup from "../Contact";
 
 const BannerContainer = styled.div`
   padding: 0;
@@ -151,14 +150,14 @@ class TopBanner extends React.PureComponent {
           <Container>
             <Row>
               <BannerInfoBlock>
-                <BannerInfoBlockTitle>De Verhuurhypotheek</BannerInfoBlockTitle>
+                <BannerInfoBlockTitle>Lorum Ipsumk</BannerInfoBlockTitle>
                 <BannerInfoBlockSubTitle>
-                  Financier je tweede woning met onze unieke verhuurhypotheek
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                 </BannerInfoBlockSubTitle>
               </BannerInfoBlock>
               <BannerWidget>
                 <SliderContainer>
-                  <p>Woningprijs</p>
+                  <p>Lorum 1</p>
                   <Slider
                     classes={{ thumb: classes.thumb }}
                     value={housePrice}
@@ -170,7 +169,7 @@ class TopBanner extends React.PureComponent {
                 </SliderContainer>
                 <span>{this.state.housePrice}</span>
                 <SliderContainer>
-                  <p>Hypotheek</p>
+                  <p>Lorum 2</p>
                   <Slider
                     classes={{ thumb: classes.thumb }}
                     value={mortgage}
@@ -182,7 +181,7 @@ class TopBanner extends React.PureComponent {
                 </SliderContainer>
                 <span>{this.state.mortgage}</span>
                 <SliderContainer>
-                  <p>Verhuurprijs</p>
+                  <p>Lorum 3</p>
                   <Slider
                     classes={{thumb: classes.thumb}}
                     value={rentPrice}
@@ -197,7 +196,7 @@ class TopBanner extends React.PureComponent {
                   <p>rendement: 2,5 % = 2500 p.j</p>
                 </OutCome>
                 <ButtonContainer>
-                  <Button title="Afspraak maken adviseur" />
+                  <Button title="CTA make appointment" />
                 </ButtonContainer>
               </BannerWidget>
             </Row>

@@ -181,7 +181,7 @@ var Benefits = function Benefits() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Benefit, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], null, "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     md: 4
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(Benefit, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_5__["Paragraph"], null, "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt."))))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(ButtonContainer, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_3__["default"], {
-    title: "Afspraak maken adviseur"
+    title: "CTA make appointment"
   })));
 };
 
@@ -459,11 +459,11 @@ var Footer = function Footer() {
     color: "#a8dadc"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: 4
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterItems, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_4__["Header4"], null, "De verhuurhypotheek"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterItems, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_4__["Header4"], null, "Lorum Ipsum product"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: 4
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterItems, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_4__["Header4"], null, "De kleine lettertjes"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(LinkBlock, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavLink, {
     to: "/"
-  }, "Onderhoudsvoorwaarden"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavLink, {
+  }, "voorwaarden"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavLink, {
     to: "/"
   }, "Privacy statement"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(NavLink, {
     to: "/"
@@ -606,7 +606,7 @@ function (_React$PureComponent) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Wrapper__WEBPACK_IMPORTED_MODULE_10__["Wrapper"], {
         id: "mortgage",
         color: "#ecf5f5"
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Container"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Header4"], null, "Maximale hypotheek"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Header5"], null, "Bereken wat jij maximaal als hypotheek kan krijgen"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Row"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Col"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Container"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Header4"], null, "Lorum Calculator"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Header5"], null, "Calculate max mortgage"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Row"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Col"], {
         md: 6
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Benefit, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_13___default.a, {
         id: "standard-textarea",
@@ -620,7 +620,7 @@ function (_React$PureComponent) {
         onClick: this.calculateMaxMortgage
       }, "calculate mortgage"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Col"], {
         md: 4
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Benefit, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Paragraph"], null, "maximale hypotheek"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Paragraph"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("strong", null, this.state.maxMortgage)))))));
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Benefit, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Paragraph"], null, "outcome"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Paragraph"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("strong", null, this.state.maxMortgage)))))));
     }
   }]);
 
@@ -752,7 +752,7 @@ function (_React$PureComponent) {
         afterAnimate: function afterAnimate() {
           return _this2.toggleButton();
         }
-      }, "Maximale hypotheek")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(LinkTitle, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_scrollchor__WEBPACK_IMPORTED_MODULE_10___default.a, {
+      }, "calculator")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(LinkTitle, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_scrollchor__WEBPACK_IMPORTED_MODULE_10___default.a, {
         animate: {
           offset: -100
         },
@@ -846,8 +846,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Typography__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Typography */ "./components/Typography/index.js");
 /* harmony import */ var react_grid_system__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! react-grid-system */ "react-grid-system");
 /* harmony import */ var react_grid_system__WEBPACK_IMPORTED_MODULE_13___default = /*#__PURE__*/__webpack_require__.n(react_grid_system__WEBPACK_IMPORTED_MODULE_13__);
-/* harmony import */ var _Contact__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../Contact */ "./components/Contact/index.js");
-
 
 
 
@@ -954,7 +952,7 @@ function (_React$PureComponent) {
           rentPrice = _this$state.rentPrice;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Banner, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
         src: "https://via.placeholder.com/2800x2000/a8dadc"
-      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_13__["Container"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_13__["Row"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerInfoBlock, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerInfoBlockTitle, null, "De Verhuurhypotheek"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerInfoBlockSubTitle, null, "Financier je tweede woning met onze unieke verhuurhypotheek")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerWidget, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SliderContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "Woningprijs"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_lab_Slider__WEBPACK_IMPORTED_MODULE_10___default.a, {
+      }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_13__["Container"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_13__["Row"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerInfoBlock, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerInfoBlockTitle, null, "Lorum Ipsumk"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerInfoBlockSubTitle, null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit,")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerWidget, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SliderContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "Lorum 1"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_lab_Slider__WEBPACK_IMPORTED_MODULE_10___default.a, {
         classes: {
           thumb: classes.thumb
         },
@@ -963,7 +961,7 @@ function (_React$PureComponent) {
         max: 400000,
         step: 20000,
         onChange: this.handleChange("housePrice")
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, this.state.housePrice), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SliderContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "Hypotheek"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_lab_Slider__WEBPACK_IMPORTED_MODULE_10___default.a, {
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, this.state.housePrice), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SliderContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "Lorum 2"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_lab_Slider__WEBPACK_IMPORTED_MODULE_10___default.a, {
         classes: {
           thumb: classes.thumb
         },
@@ -972,7 +970,7 @@ function (_React$PureComponent) {
         max: 350000,
         step: 20000,
         onChange: this.handleChange("mortgage")
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, this.state.mortgage), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SliderContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "Verhuurprijs"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_lab_Slider__WEBPACK_IMPORTED_MODULE_10___default.a, {
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, this.state.mortgage), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SliderContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "Lorum 3"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_lab_Slider__WEBPACK_IMPORTED_MODULE_10___default.a, {
         classes: {
           thumb: classes.thumb
         },
@@ -982,7 +980,7 @@ function (_React$PureComponent) {
         step: 200,
         onChange: this.handleChange("rentPrice")
       })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, this.state.rentPrice), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(OutCome, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "rendement: 2,5 % = 2500 p.j")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ButtonContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_9__["default"], {
-        title: "Afspraak maken adviseur"
+        title: "CTA make appointment"
       })))))));
     }
   }]);
@@ -1084,7 +1082,7 @@ __webpack_require__.r(__webpack_exports__);
 var Wrapper = styled_components__WEBPACK_IMPORTED_MODULE_0___default.a.div.withConfig({
   displayName: "Wrapper",
   componentId: "sc-1lr3585-0"
-})(["background:", ";padding:48px 48px 84px 48px;max-width:1197px;margin:0 auto;height:", ";min-height:", ";color:", ";"], function (props) {
+})(["background:", ";padding:48px 48px 84px 48px;margin:0 auto;height:", ";min-height:", ";color:", ";"], function (props) {
   return props.color;
 }, function (props) {
   return props.height ? props.height : "100%";

@@ -32,14 +32,14 @@ const Footer = () => (
       <Row>
         <Col sm={4}>
           <FooterItems>
-            <Header4>De verhuurhypotheek</Header4>
+            <Header4>Lorum Ipsum product</Header4>
           </FooterItems>
         </Col>
         <Col sm={4}>
           <FooterItems>
             <Header4>De kleine lettertjes</Header4>
             <LinkBlock>
-              <NavLink to={"/"}>Onderhoudsvoorwaarden</NavLink>
+              <NavLink to={"/"}>voorwaarden</NavLink>
               <NavLink to={"/"}>Privacy statement</NavLink>
               <NavLink to={"/"}>Gebruikersvoorwaarden</NavLink>
               <NavLink to={"/"}>Fraudebeleid</NavLink>
