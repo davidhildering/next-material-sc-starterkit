@@ -14,8 +14,8 @@
     "dev": "nodemon -w server/server.js server/server.js",
     "build": "NODE_ENV=production next build",
     "export": "next export",
-    "start": "NODE_ENV=production node server/server.js",
-    "heroku-postbuild": "next build"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
