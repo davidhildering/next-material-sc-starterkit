@@ -2,6 +2,10 @@
   "name": "next-material-sc-starterkit",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "npm": "6.4.1",
+    "node": "10.13.0"
+  },
   "main": "index.js",
   "scripts": {
     "test": "jest",
