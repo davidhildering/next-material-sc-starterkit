@@ -9,7 +9,7 @@ export const FAQ = () => {
       <Row>
         <Col xs={12} md={12}>
           <CopyContainer>
-            <Header3>Veelgestelde vragen</Header3>
+            <Header3>FAQ</Header3>
             <Container>
               <Row>
                 <Col xs={12} md={6}>

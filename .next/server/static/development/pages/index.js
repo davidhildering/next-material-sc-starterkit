@@ -211,7 +211,7 @@ var ButtonLink = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.a.with
 var ButtonLayout = styled_components__WEBPACK_IMPORTED_MODULE_1___default.a.div.withConfig({
   displayName: "Button__ButtonLayout",
   componentId: "sc-12q9o1o-1"
-})(["padding:10px 8px;font-family:SFProBold,sans-serif;font-size:16px;text-align:center;vertical-align:middle;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;color:#ffffff;background-color:#f55460;max-width:", ";border-radius:4px;"], function (props) {
+})(["padding:10px 8px;font-family:SFProBold,sans-serif;font-size:16px;text-align:center;vertical-align:middle;touch-action:manipulation;cursor:pointer;background-image:none;border:1px solid transparent;color:#ffffff;background-color:yellowgreen;max-width:", ";border-radius:4px;"], function (props) {
   return props.maxWidth ? props.maxWidth : "200px";
 });
 
@@ -343,7 +343,7 @@ function (_React$Component) {
       var classes = this.props.classes;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Wrapper__WEBPACK_IMPORTED_MODULE_17__["Wrapper"], {
         id: "contact",
-        color: "#a8dadc"
+        color: "#d3d3d3"
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Container"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_18__["Header4"], null, "Contact"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_18__["Header5"], null, "Vragen? Neem contact met ons op."), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Row"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Col"], {
         md: 6
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Benefit, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("form", null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_FormControl__WEBPACK_IMPORTED_MODULE_13___default.a, {
@@ -408,7 +408,7 @@ var FAQ = function FAQ() {
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: 12,
     md: 12
-  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_Home__WEBPACK_IMPORTED_MODULE_3__["CopyContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_2__["Header3"], null, "Veelgestelde vragen"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
+  }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_containers_Home__WEBPACK_IMPORTED_MODULE_3__["CopyContainer"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_2__["Header3"], null, "FAQ"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     xs: 12,
     md: 6
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_2__["Paragraph"], null, "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_2__["Paragraph"], null, "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna")), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -456,7 +456,7 @@ var FooterItems = styled_components__WEBPACK_IMPORTED_MODULE_2___default.a.div.w
 
 var Footer = function Footer() {
   return react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Wrapper__WEBPACK_IMPORTED_MODULE_3__["Wrapper"], {
-    color: "#a8dadc"
+    color: "#d3d3d3"
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Container"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Row"], null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
     sm: 4
   }, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(FooterItems, null, react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_4__["Header4"], null, "Lorum Ipsum product"))), react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_1__["Col"], {
@@ -606,11 +606,11 @@ function (_React$PureComponent) {
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Wrapper__WEBPACK_IMPORTED_MODULE_10__["Wrapper"], {
         id: "mortgage",
         color: "#ecf5f5"
-      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Container"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Header4"], null, "Lorum Calculator"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Header5"], null, "Calculate max mortgage"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Row"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Col"], {
+      }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Container"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Header4"], null, "Lorum Calculator"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Header5"], null, "Calculate max outcome"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Row"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Col"], {
         md: 6
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Benefit, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_core_TextField__WEBPACK_IMPORTED_MODULE_13___default.a, {
         id: "standard-textarea",
-        label: "Hoeveel is je inkomen?",
+        label: "enter income",
         placeholder: "70000",
         margin: "normal",
         type: "number",
@@ -618,7 +618,7 @@ function (_React$PureComponent) {
         onChange: this.handleChange
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("button", {
         onClick: this.calculateMaxMortgage
-      }, "calculate mortgage"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Col"], {
+      }, "calculate"))), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_8__["Col"], {
         md: 4
       }, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Benefit, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Paragraph"], null, "outcome"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Typography__WEBPACK_IMPORTED_MODULE_11__["Paragraph"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("strong", null, this.state.maxMortgage)))))));
     }
@@ -765,7 +765,7 @@ function (_React$PureComponent) {
         afterAnimate: function afterAnimate() {
           return _this2.toggleButton();
         }
-      }, "Veelgestelde vragen")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(LinkTitle, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_scrollchor__WEBPACK_IMPORTED_MODULE_10___default.a, {
+      }, "FAQ")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(LinkTitle, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_scrollchor__WEBPACK_IMPORTED_MODULE_10___default.a, {
         to: "#aboutus",
         afterAnimate: function afterAnimate() {
           return _this2.toggleButton();
@@ -951,7 +951,7 @@ function (_React$PureComponent) {
           mortgage = _this$state.mortgage,
           rentPrice = _this$state.rentPrice;
       return react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(Banner, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("img", {
-        src: "https://via.placeholder.com/2800x2000/a8dadc"
+        src: "https://via.placeholder.com/2800x2000/#d3d3d3"
       }), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_13__["Container"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(react_grid_system__WEBPACK_IMPORTED_MODULE_13__["Row"], null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerInfoBlock, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerInfoBlockTitle, null, "Lorum Ipsumk"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerInfoBlockSubTitle, null, "Lorem ipsum dolor sit amet, consectetur adipiscing elit,")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(BannerWidget, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(SliderContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "Lorum 1"), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_material_ui_lab_Slider__WEBPACK_IMPORTED_MODULE_10___default.a, {
         classes: {
           thumb: classes.thumb
@@ -979,7 +979,7 @@ function (_React$PureComponent) {
         max: 2500,
         step: 200,
         onChange: this.handleChange("rentPrice")
-      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, this.state.rentPrice), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(OutCome, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("p", null, "rendement: 2,5 % = 2500 p.j")), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ButtonContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_9__["default"], {
+      })), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement("span", null, this.state.rentPrice), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(OutCome, null), react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(ButtonContainer, null, react__WEBPACK_IMPORTED_MODULE_7___default.a.createElement(_Button__WEBPACK_IMPORTED_MODULE_9__["default"], {
         title: "CTA make appointment"
       })))))));
     }
@@ -3011,7 +3011,7 @@ function (_Component) {
           fontSize: '20px',
           padding: '32px 0',
           justifyContent: 'space-evenly',
-          background: "#a8dadc",
+          background: "#d3d3d3",
           width: '100%',
           margin: "0 auto",
           fontFamily: 'sans-serif'
@@ -3021,7 +3021,7 @@ function (_Component) {
           padding: '7px 24px',
           color: "#ffffff",
           fontSize: "16px",
-          background: '#f55460',
+          background: 'yellowgreen',
           borderRadius: '4px',
           backgroundImage: 'none',
           border: '1px solid transparent'

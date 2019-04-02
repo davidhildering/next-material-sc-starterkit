@@ -27,7 +27,7 @@ const FooterItems = styled.div`
 `;
 
 const Footer = () => (
-  <Wrapper color="#a8dadc">
+  <Wrapper color="#d3d3d3">
     <Container>
       <Row>
         <Col sm={4}>

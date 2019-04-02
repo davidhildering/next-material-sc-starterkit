@@ -53,7 +53,7 @@ class Contact extends React.Component {
   render() {
     const { classes } = this.props;
     return (
-      <Wrapper id="contact" color="#a8dadc">
+      <Wrapper id="contact" color="#d3d3d3">
         <Container>
           <Header4>Contact</Header4>
           <Header5>Vragen? Neem contact met ons op.</Header5>

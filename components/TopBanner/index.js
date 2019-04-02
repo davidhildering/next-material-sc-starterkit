@@ -146,7 +146,7 @@ class TopBanner extends React.PureComponent {
     return (
       <BannerContainer>
         <Banner>
-          <img src="https://via.placeholder.com/2800x2000/a8dadc" />
+          <img src="https://via.placeholder.com/2800x2000/#d3d3d3" />
           <Container>
             <Row>
               <BannerInfoBlock>
@@ -193,7 +193,6 @@ class TopBanner extends React.PureComponent {
                 </SliderContainer>
                 <span>{this.state.rentPrice}</span>
                 <OutCome>
-                  <p>rendement: 2,5 % = 2500 p.j</p>
                 </OutCome>
                 <ButtonContainer>
                   <Button title="CTA make appointment" />

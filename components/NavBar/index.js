@@ -132,7 +132,7 @@ class NavBar extends React.PureComponent {
             </LinkTitle>
             <LinkTitle>
               <Scrollchor to="#faq" afterAnimate={() => this.toggleButton()}>
-                Veelgestelde vragen
+                FAQ
               </Scrollchor>
             </LinkTitle>
             <LinkTitle>

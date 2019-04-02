@@ -17,7 +17,7 @@ const ButtonLayout = styled.div`
   background-image: none;
   border: 1px solid transparent;
   color: #ffffff;
-  background-color: #f55460;
+  background-color: yellowgreen;
   max-width: ${props => (props.maxWidth ? props.maxWidth : "200px")};
   border-radius: 4px;
 `;

@@ -37,8 +37,8 @@ class App extends Component {
           disableStyles={true}
           location="bottom"
           buttonText="Continue"
-          style={{ display: 'flex', fontSize: '20px', padding: '32px 0', justifyContent: 'space-evenly', background: "#a8dadc", width: '100%', margin: "0 auto", fontFamily: 'sans-serif' }}
-          buttonStyle={{ display: 'flex', padding: '7px 24px',  color: "#ffffff", fontSize: "16px", background: '#f55460', borderRadius: '4px', backgroundImage: 'none', border: '1px solid transparent' }}
+          style={{ display: 'flex', fontSize: '20px', padding: '32px 0', justifyContent: 'space-evenly', background: "#d3d3d3", width: '100%', margin: "0 auto", fontFamily: 'sans-serif' }}
+          buttonStyle={{ display: 'flex', padding: '7px 24px',  color: "#ffffff", fontSize: "16px", background: 'yellowgreen', borderRadius: '4px', backgroundImage: 'none', border: '1px solid transparent' }}
           expires={5}
         >
           This website uses cookies to enhance the user experience.

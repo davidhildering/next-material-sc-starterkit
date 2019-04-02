@@ -72,13 +72,13 @@ class MortgageCalculator extends React.PureComponent {
       <Wrapper id="mortgage" color="#ecf5f5">
         <Container>
           <Header4>Lorum Calculator</Header4>
-          <Header5>Calculate max mortgage</Header5>
+          <Header5>Calculate max outcome</Header5>
           <Row>
             <Col md={6}>
               <Benefit>
                 <TextField
                   id="standard-textarea"
-                  label="Hoeveel is je inkomen?"
+                  label="enter income"
                   placeholder="70000"
                   margin="normal"
                   type="number"
@@ -86,7 +86,7 @@ class MortgageCalculator extends React.PureComponent {
                   onChange={this.handleChange}
                 />
                 <button onClick={this.calculateMaxMortgage}>
-                  calculate mortgage
+                  calculate
                 </button>
               </Benefit>
 
