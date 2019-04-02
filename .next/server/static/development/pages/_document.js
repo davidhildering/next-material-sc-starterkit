@@ -2205,7 +2205,9 @@ function (_Document) {
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(MyDocument, [{
     key: "render",
     value: function render() {
-      var pageContext = this.props.pageContext;
+      var _this$props = this.props,
+          pageContext = _this$props.pageContext,
+          isProduction = _this$props.isProduction;
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("html", {
         lang: "en",
         dir: "ltr"
@@ -2220,7 +2222,12 @@ function (_Document) {
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500"
-      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Main"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], null)));
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Main"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], null), isProduction && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
+        async: true,
+        src: "https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
+        dangerouslySetInnerHTML: MyDocument.setGoogleTags()
+      }))));
     }
   }], [{
     key: "getInitialProps",
@@ -2228,7 +2235,7 @@ function (_Document) {
       var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
       /*#__PURE__*/
       _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(ctx) {
-        var pageContext, page, css, sheet, originalRenderPage, initialProps;
+        var pageContext, page, css, sheet, originalRenderPage, isProduction, initialProps;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
@@ -2263,12 +2270,14 @@ function (_Document) {
                   });
                 };
 
-                _context.next = 8;
+                isProduction = "development" === 'production';
+                _context.next = 9;
                 return next_document__WEBPACK_IMPORTED_MODULE_10___default.a.getInitialProps(ctx);
 
-              case 8:
+              case 9:
                 initialProps = _context.sent;
                 return _context.abrupt("return", Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, initialProps, page, {
+                  isProduction: isProduction,
                   pageContext: pageContext,
                   styles: react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("style", {
                     id: "jss-server-side" // eslint-disable-next-line react/no-danger
@@ -2279,17 +2288,17 @@ function (_Document) {
                   }), initialProps.styles, sheet.getStyleElement(), styled_jsx_server__WEBPACK_IMPORTED_MODULE_11___default()() || null)
                 }));
 
-              case 10:
-                _context.prev = 10;
+              case 11:
+                _context.prev = 11;
                 sheet.seal();
-                return _context.finish(10);
+                return _context.finish(11);
 
-              case 13:
+              case 14:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee, null, [[4,, 10, 13]]);
+        }, _callee, null, [[4,, 11, 14]]);
       }));
 
       function getInitialProps(_x) {
@@ -2298,6 +2307,13 @@ function (_Document) {
 
       return getInitialProps;
     }()
+  }, {
+    key: "setGoogleTags",
+    value: function setGoogleTags() {
+      return {
+        __html: "\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n        gtag('config', 'UA-XXXXXXXX-X');\n      "
+      };
+    }
   }]);
 
   return MyDocument;

@@ -30,11 +30,12 @@ class MyDocument extends Document {
       ctx.renderPage = () => originalRenderPage({
         enhanceApp: App => props => sheet.collectStyles(<App {...props} />)
       });
-
+      const isProduction = process.env.NODE_ENV === 'production';
       const initialProps = await Document.getInitialProps(ctx);
       return {
         ...initialProps,
         ...page,
+        isProduction,
         pageContext,
         styles: (
           <React.Fragment>
@@ -52,8 +53,20 @@ class MyDocument extends Document {
     }
   }
 
+
+
+  static setGoogleTags() {
+    return {
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-XXXXXXXX-X');
+      `
+    };
+  }
   render() {
-    const { pageContext } = this.props;
+    const { pageContext, isProduction } = this.props;
 
     return (
       <html lang="en" dir="ltr">
@@ -77,6 +90,15 @@ class MyDocument extends Document {
       <body>
       <Main />
       <NextScript />
+      {isProduction && (
+        <div>
+          <script
+            async
+            src="https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"
+          />
+          <script dangerouslySetInnerHTML={MyDocument.setGoogleTags()} />
+        </div>
+      )}
       </body>
       </html>
     );
