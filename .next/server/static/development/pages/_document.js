@@ -2169,10 +2169,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _babel_runtime_corejs2_helpers_esm_inherits__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @babel/runtime-corejs2/helpers/esm/inherits */ "./node_modules/@babel/runtime-corejs2/helpers/esm/inherits.js");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_8__);
-/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
-/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_9__);
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-components */ "styled-components");
-/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! prop-types */ "prop-types");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_9__);
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! next/document */ "./node_modules/next/document.js");
+/* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var styled_jsx_server__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-jsx/server */ "./node_modules/styled-jsx/server.js");
+/* harmony import */ var styled_jsx_server__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_server__WEBPACK_IMPORTED_MODULE_11__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_12___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_12__);
+
+
 
 
 
@@ -2197,30 +2203,24 @@ function (_Document) {
   }
 
   Object(_babel_runtime_corejs2_helpers_esm_createClass__WEBPACK_IMPORTED_MODULE_4__["default"])(MyDocument, [{
-    key: "setGoogleTags",
-    value: function setGoogleTags() {
-      return {
-        __html: "\n        window.dataLayer = window.dataLayer || [];\n        function gtag(){dataLayer.push(arguments);}\n        gtag('js', new Date());\n        gtag('config', 'UA-XXXXXXXX-X');\n      "
-      };
-    }
-  }, {
     key: "render",
     value: function render() {
-      var isProduction = this.props.isProduction;
+      var pageContext = this.props.pageContext;
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("html", {
         lang: "en",
         dir: "ltr"
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Head"], null, this.props.styleTags, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Head"], null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         charSet: "utf-8"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         name: "viewport",
         content: "minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"
-      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Main"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["NextScript"], null), isProduction && react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("div", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
-        async: true,
-        src: "https://www.googletagmanager.com/gtag/js?id=UA-XXXXXXXX-X"
-      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("script", {
-        dangerouslySetInnerHTML: this.setGoogleTags()
-      }))));
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+        name: "theme-color",
+        content: pageContext ? pageContext.theme.palette.primary.main : null
+      }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("link", {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css?family=Roboto:300,400,500"
+      })), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("body", null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["Main"], null), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_10__["NextScript"], null)));
     }
   }], [{
     key: "getInitialProps",
@@ -2228,35 +2228,68 @@ function (_Document) {
       var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
       /*#__PURE__*/
       _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(ctx) {
-        var sheet, page, styleTags, isProduction, initialProps;
+        var pageContext, page, css, sheet, originalRenderPage, initialProps;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
-                sheet = new styled_components__WEBPACK_IMPORTED_MODULE_10__["ServerStyleSheet"]();
-                page = ctx.renderPage(function (App) {
-                  return function (props) {
-                    return sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(App, props));
+                page = ctx.renderPage(function (Component) {
+                  var WrappedComponent = function WrappedComponent(props) {
+                    pageContext = props.pageContext;
+                    return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, props);
                   };
-                });
-                styleTags = sheet.getStyleElement();
-                isProduction = "development" === 'production';
-                _context.next = 6;
-                return next_document__WEBPACK_IMPORTED_MODULE_9___default.a.getInitialProps(ctx);
 
-              case 6:
-                initialProps = _context.sent;
-                return _context.abrupt("return", Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, initialProps, page, {
-                  styleTags: styleTags,
-                  isProduction: isProduction
-                }));
+                  WrappedComponent.propTypes = {
+                    pageContext: prop_types__WEBPACK_IMPORTED_MODULE_9___default.a.object.isRequired
+                  };
+                  return WrappedComponent;
+                });
+
+                if (pageContext) {
+                  css = pageContext.sheetsRegistry.toString();
+                }
+
+                sheet = new styled_components__WEBPACK_IMPORTED_MODULE_12__["ServerStyleSheet"]();
+                originalRenderPage = ctx.renderPage;
+                _context.prev = 4;
+
+                ctx.renderPage = function () {
+                  return originalRenderPage({
+                    enhanceApp: function enhanceApp(App) {
+                      return function (props) {
+                        return sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(App, props));
+                      };
+                    }
+                  });
+                };
+
+                _context.next = 8;
+                return next_document__WEBPACK_IMPORTED_MODULE_10___default.a.getInitialProps(ctx);
 
               case 8:
+                initialProps = _context.sent;
+                return _context.abrupt("return", Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, initialProps, page, {
+                  pageContext: pageContext,
+                  styles: react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(react__WEBPACK_IMPORTED_MODULE_8___default.a.Fragment, null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("style", {
+                    id: "jss-server-side" // eslint-disable-next-line react/no-danger
+                    ,
+                    dangerouslySetInnerHTML: {
+                      __html: css
+                    }
+                  }), initialProps.styles, sheet.getStyleElement(), styled_jsx_server__WEBPACK_IMPORTED_MODULE_11___default()() || null)
+                }));
+
+              case 10:
+                _context.prev = 10;
+                sheet.seal();
+                return _context.finish(10);
+
+              case 13:
               case "end":
                 return _context.stop();
             }
           }
-        }, _callee);
+        }, _callee, null, [[4,, 10, 13]]);
       }));
 
       function getInitialProps(_x) {
@@ -2268,7 +2301,7 @@ function (_Document) {
   }]);
 
   return MyDocument;
-}(next_document__WEBPACK_IMPORTED_MODULE_9___default.a);
+}(next_document__WEBPACK_IMPORTED_MODULE_10___default.a);
 
 /* harmony default export */ __webpack_exports__["default"] = (MyDocument);
 
