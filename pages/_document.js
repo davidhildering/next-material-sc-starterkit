@@ -1,14 +1,17 @@
 import React from 'react';
 import Document, { Head, Main, NextScript } from 'next/document';
 import flush from 'styled-jsx/server';
+import { ServerStyleSheet } from 'styled-components';
 
 class MyDocument extends Document {
   static async getInitialProps (ctx) {
-
+    const sheet = new ServerStyleSheet();
+    const page = ctx.renderPage(App => props => sheet.collectStyles(<App {...props} />));
+    const styleTags = sheet.getStyleElement();
     const isProduction = process.env.NODE_ENV === 'production';
     const initialProps = await Document.getInitialProps(ctx);
     // Pass isProduction flag back through props
-    return { ...initialProps, isProduction };
+    return { ...initialProps, ...page, styleTags, isProduction };
   }
 
   setGoogleTags() {
@@ -26,6 +29,7 @@ class MyDocument extends Document {
     return (
       <html lang="en" dir="ltr">
       <Head>
+        {this.props.styleTags}
         <meta charSet="utf-8" />
         <meta
           name="viewport"
@@ -73,7 +77,7 @@ MyDocument.getInitialProps = ctx => {
   // 4. page.render
 
   // Render app and page and get the context of the page with collected side effects.
-  const page = ctx.renderPage(Component => {
+  const page = ctx.renderPage(Component => props => {
     const WrappedComponent = props => {
       return <Component {...props} />;
     };

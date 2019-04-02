@@ -2173,6 +2173,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_document__WEBPACK_IMPORTED_MODULE_9___default = /*#__PURE__*/__webpack_require__.n(next_document__WEBPACK_IMPORTED_MODULE_9__);
 /* harmony import */ var styled_jsx_server__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! styled-jsx/server */ "./node_modules/styled-jsx/server.js");
 /* harmony import */ var styled_jsx_server__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(styled_jsx_server__WEBPACK_IMPORTED_MODULE_10__);
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! styled-components */ "styled-components");
+/* harmony import */ var styled_components__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(styled_components__WEBPACK_IMPORTED_MODULE_11__);
+
 
 
 
@@ -2210,7 +2213,7 @@ function (_Document) {
       return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("html", {
         lang: "en",
         dir: "ltr"
-      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Head"], null, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
+      }, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(next_document__WEBPACK_IMPORTED_MODULE_9__["Head"], null, this.props.styleTags, react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         charSet: "utf-8"
       }), react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement("meta", {
         name: "viewport",
@@ -2228,22 +2231,30 @@ function (_Document) {
       var _getInitialProps = Object(_babel_runtime_corejs2_helpers_esm_asyncToGenerator__WEBPACK_IMPORTED_MODULE_2__["default"])(
       /*#__PURE__*/
       _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.mark(function _callee(ctx) {
-        var isProduction, initialProps;
+        var sheet, page, styleTags, isProduction, initialProps;
         return _babel_runtime_corejs2_regenerator__WEBPACK_IMPORTED_MODULE_0___default.a.wrap(function _callee$(_context) {
           while (1) {
             switch (_context.prev = _context.next) {
               case 0:
+                sheet = new styled_components__WEBPACK_IMPORTED_MODULE_11__["ServerStyleSheet"]();
+                page = ctx.renderPage(function (App) {
+                  return function (props) {
+                    return sheet.collectStyles(react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(App, props));
+                  };
+                });
+                styleTags = sheet.getStyleElement();
                 isProduction = "development" === 'production';
-                _context.next = 3;
+                _context.next = 6;
                 return next_document__WEBPACK_IMPORTED_MODULE_9___default.a.getInitialProps(ctx);
 
-              case 3:
+              case 6:
                 initialProps = _context.sent;
-                return _context.abrupt("return", Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, initialProps, {
+                return _context.abrupt("return", Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, initialProps, page, {
+                  styleTags: styleTags,
                   isProduction: isProduction
                 }));
 
-              case 5:
+              case 8:
               case "end":
                 return _context.stop();
             }
@@ -2286,11 +2297,13 @@ MyDocument.getInitialProps = function (ctx) {
   // 4. page.render
   // Render app and page and get the context of the page with collected side effects.
   var page = ctx.renderPage(function (Component) {
-    var WrappedComponent = function WrappedComponent(props) {
-      return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, props);
-    };
+    return function (props) {
+      var WrappedComponent = function WrappedComponent(props) {
+        return react__WEBPACK_IMPORTED_MODULE_8___default.a.createElement(Component, props);
+      };
 
-    return WrappedComponent;
+      return WrappedComponent;
+    };
   });
   var css;
   return Object(_babel_runtime_corejs2_helpers_esm_objectSpread__WEBPACK_IMPORTED_MODULE_1__["default"])({}, page, {
@@ -2494,6 +2507,17 @@ module.exports = require("react");
 /***/ (function(module, exports) {
 
 module.exports = require("regenerator-runtime");
+
+/***/ }),
+
+/***/ "styled-components":
+/*!************************************!*\
+  !*** external "styled-components" ***!
+  \************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = require("styled-components");
 
 /***/ })
 
