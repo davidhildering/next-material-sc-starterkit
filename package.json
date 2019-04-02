@@ -12,10 +12,10 @@
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
     "dev": "nodemon -w server/server.js server/server.js",
-    "build": "next build",
-    "prod:build": "SET NODE_ENV=production & npm run build",
+    "build": "SET NODE_ENV=production & next build",
     "export": "next export",
-    "start": "SET NODE_ENV=production & node server/server.js"
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "npm run build"
   },
   "keywords": [],
   "author": "",
